@@ -1,0 +1,687 @@
+:root {
+  --satu: #316677;
+  --dua: #b1e7f9;
+  --tiga: #65d3f7;
+  --empat: #556f78;
+  --lima: #51a7c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--satu);
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav {
+  padding: 1rem 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(49, 102, 119, 0.8);
+  border-bottom: 0.1rem solid var(--dua);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header nav .logoBrand a {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header nav .logoBrand a span {
+  color: var(--dua);
+}
+
+header nav .navbar a {
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+header nav .navbar a:hover {
+  color: var(--dua);
+  text-shadow: 0 0 1rem var(--dua);
+}
+
+header nav .navbar a::after {
+  content: "";
+  display: block;
+  padding-top: 0.1rem;
+  border-bottom: 0.1rem solid var(--dua);
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+header nav .navbar a:hover::after {
+  transform: scaleX(0.6);
+}
+
+header nav .extra {
+  display: flex;
+  align-items: center;
+}
+
+header nav .extra .tombolSearch {
+  position: relative;
+}
+
+header nav .extra .tombolSearch .search {
+  width: 45rem;
+  height: 3rem;
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: var(--satu);
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+header nav .extra .tombolSearch .search.active {
+  transform: scaleX(1);
+}
+
+header nav .extra a {
+  color: white;
+}
+
+header nav .extra a:hover {
+  color: var(--dua);
+}
+
+header nav .extra #humburger {
+  display: none;
+}
+
+main .home {
+  background-image: url(../img/cover.jpg);
+  min-height: 100vh;
+  padding: 0 7%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+main .home .jumbotron {
+  max-width: 45rem;
+  background-blend-mode: difference;
+}
+
+main .home .jumbotron h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px var(--tiga);
+}
+
+main .home .jumbotron p {
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px var(--tiga);
+}
+
+main .home .jumbotron .cta {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--dua);
+  color: var(--satu);
+  border-radius: 10px;
+  box-shadow: 0 0 1rem var(--dua);
+}
+
+main .home::after {
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(6, 94, 132, 0.01) 20%, rgb(49, 102, 119) 60%);
+}
+
+main .about,
+main .products,
+main .contact {
+  padding: 6rem 7% 1.4rem;
+}
+
+main .about h2,
+main .products h2,
+main .contact h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+main .about h2 span,
+main .products h2 span,
+main .contact h2 span {
+  color: var(--dua);
+}
+
+main .about .about-row {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+main .about .about-row .about-text {
+  flex: 1 1 35rem;
+}
+
+main .about .about-row .about-text h3 {
+  color: var(--dua);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+main .about .about-row .about-text p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+main .about .about-row .about-img {
+  flex: 1 1 40rem;
+}
+
+main .about .about-row .about-img img {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--dua);
+}
+
+main .products p,
+main .contact p {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+main .products .products-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+main .products .products-row .product-item {
+  border: 1px solid var(--dua);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1rem;
+  overflow: auto;
+  box-shadow: 0 0 1rem var(--dua);
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+main .products .products-row .product-item:hover {
+  background-color: rgba(177, 231, 249, 0.7);
+  transform: scale(1.1);
+}
+
+main .products .products-row .product-item img {
+  margin-bottom: 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 0.3rem var(--satu);
+}
+
+main .products .products-row .product-item h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 0.3rem var(--satu);
+}
+
+main .products .products-row .product-item a {
+  font-size: 0.8rem;
+  background-color: var(--dua);
+  color: var(--satu);
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0.3rem var(--satu);
+}
+
+main .products .products-row .product-item a:hover {
+  background-color: var(--satu);
+  color: var(--dua);
+}
+
+main .contact .contact-row {
+  background-color: var(--empat);
+  display: flex;
+}
+
+main .contact .contact-row .map {
+  width: 100%;
+  flex: 1 1 30rem;
+  object-fit: cover;
+}
+
+main .contact .contact-row .alertX {
+  margin: 0 1rem 1rem;
+  padding: 1rem;
+  background-color: var(--dua);
+  color: var(--satu);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contact .contact-row .alertX strong {
+  margin-right: 0.5rem;
+}
+
+main .contact .contact-row .alertX .alertBtn {
+  background-color: var(--dua);
+  margin-left: 0.2rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+main .contact .contact-row .alert .alertX:hover {
+  color: var(--lima);
+}
+
+main .contact .contact-row .form {
+  flex: 1 1 30rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+main .contact .contact-row .form .formItem {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--dua);
+  display: flex;
+  align-items: center;
+}
+
+main .contact .contact-row .form .pesan {
+  display: block;
+}
+
+main .contact .contact-row .form .formItem .iconWarna {
+  color: var(--dua);
+}
+
+main .contact .contact-row .form .formItem ::placeholder {
+  color: rgba(177, 231, 249, 0.3);
+}
+
+main .contact .contact-row .form .formItem input {
+  width: 100%;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--dua);
+}
+
+main .contact .contact-row .form .formItem h4 {
+  color: var(--dua);
+}
+
+main .contact .contact-row .form .formItem textarea {
+  width: 100%;
+  background-color: transparent;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--dua);
+}
+
+main .contact .contact-row .form .kirim {
+  background-color: var(--dua);
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--satu);
+  cursor: pointer;
+}
+
+main .contact .contact-row .form .loading {
+  background-color: var(--dua);
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--satu);
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+main .contact .contact-row .form .iconLoading {
+  color: var(--);
+}
+
+main .contact .contact-row .form span {
+  margin-left: 0.5rem;
+}
+
+aside .profil {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-color: var(--dua);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 8888;
+}
+
+aside .profil a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--satu);
+}
+
+aside .profil:hover {
+  border: 2px solid var(--dua);
+  background-color: transparent;
+}
+
+aside .profil a:hover {
+  color: var(--dua);
+}
+
+.detailProfil,
+.detailMineral,
+.detailBio,
+.detailRo {
+  color: var(--dua);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: none;
+  animation: dPBox 0.5s;
+}
+
+.detailProfil .identitasProfil,
+.detailMineral .dMbox,
+.detailBio .dMbox,
+.detailRo .dMbox {
+  width: 60%;
+  background-color: var(--satu);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.detailProfil .identitasProfil img,
+.detailMineral .dMbox img,
+.detailBio .dMbox img,
+.detailRo .dMbox img {
+  width: 200px;
+  height: 200px;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--dua);
+}
+
+.detailProfil .identitasProfil h3,
+.detailMineral .dMbox h3,
+.detailBio .dMbox h3,
+.detailRo .dMbox h3 {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid var(--dua);
+}
+
+.detailProfil .identitasProfil table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.detailProfil .identitasProfil tr:nth-child(even) {
+  background-color: var(--dua);
+  color: var(--satu);
+}
+
+.detailProfil .identitasProfil td {
+  padding: 0.5rem 2.5rem;
+}
+
+.detailProfil .identitasProfil .iconX,
+.detailMineral .iconX,
+.detailBio .iconX,
+.detailRo .iconX {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.detailProfil .identitasProfil .iconX a,
+.detailMineral .iconX,
+.detailBio .iconX,
+.detailRo .iconX {
+  background-color: var(--dua);
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes dPBox {
+  from {
+    background-color: rgb(255, 255, 255);
+    transform: scale(0);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+}
+
+.detailMineral .dMbox p,
+.detailBio .dMbox p,
+.detailRo .dMbox p {
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+footer .penutup {
+  background-color: var(--dua);
+  padding: 1rem 7%;
+  text-align: center;
+}
+
+footer .penutup .sosmed,
+footer .penutup .footerNav,
+footer .penutup .copyright {
+  color: var(--satu);
+  margin: 1rem;
+}
+
+footer .penutup .sosmed a,
+footer .penutup .footerNav a {
+  color: var(--satu);
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+footer .penutup .sosmed a:hover,
+footer .penutup .footerNav a:hover {
+  color: var(--tiga);
+}
+
+footer .penutup .copyright p {
+  font-size: 1rem;
+}
+
+/* Media Query */
+/* dekstop */
+@media (min-width: 1200px) {
+  html {
+    font-size: 120%;
+  }
+
+  header nav .extra .tombolSearch .search {
+    margin-top: -5px;
+  }
+}
+
+/* tablets */
+@media (max-width: 769px) {
+  html {
+    font-size: 80%;
+  }
+
+  header nav .extra .tombolSearch .search {
+    width: 30rem;
+    top: -6px;
+  }
+
+  header nav .navbar a {
+    padding: 0 0.8rem;
+  }
+
+  main .contact .contact-row {
+    flex-wrap: wrap;
+  }
+
+  main .contact .contact-row .form {
+    margin-top: -2rem;
+  }
+
+  main .contact .contact-row .alertX {
+    margin: 1rem;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .detailProfil .identitasProfil td {
+    padding: 0.5rem 2rem;
+  }
+
+  .detailProfil .identitasProfil,
+  .detailMineral .dMbox,
+  .detailBio .dMbox,
+  .detailRo .dMbox {
+    width: 80%;
+  }
+}
+
+/* phones */
+@media (max-width: 576px) {
+  html {
+    font-size: 75%;
+  }
+
+  header nav .navbar {
+    width: 55%;
+    height: 100vh;
+    padding: 2rem 3%;
+    background-color: var(--dua);
+    position: absolute;
+    top: 100%;
+    right: -100%;
+  }
+
+  header nav .navbar.active {
+    right: 0;
+  }
+
+  header nav .navbar a {
+    color: var(--satu);
+    font-size: 1.3rem;
+    margin: 0 10%;
+    padding: 2rem;
+  }
+
+  header nav .navbar a:hover {
+    color: var(--lima);
+  }
+
+  header nav .navbar a::after {
+    content: "";
+    border-bottom: 0.1rem solid var(--satu);
+  }
+
+  header nav .extra .tombolSearch .search {
+    width: 22rem;
+  }
+
+  header nav .extra a {
+    padding: 0 0.5rem;
+  }
+
+  header nav .extra a#humburger {
+    display: inline;
+    cursor: pointer;
+  }
+
+  main .about .about-row {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  main .about .about-row .about-text {
+    order: 2;
+  }
+
+  main .products .products-row {
+    overflow: visible;
+  }
+
+  main .contact .contact-row .alertX {
+    font-size: 0.7rem;
+  }
+
+  .detailProfil .identitasProfil td {
+    padding: 0.5rem;
+  }
+}
