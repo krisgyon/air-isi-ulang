@@ -603,6 +603,11 @@ footer .penutup .copyright p {
     font-size: 1rem;
   }
 
+  footer .penutup .sosmed a,
+  footer .penutup .footerNav a {
+    margin: 0 0.2rem;
+  }
+
   .detailProfil .identitasProfil td {
     padding: 0.5rem 2rem;
   }
