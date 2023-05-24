@@ -42,7 +42,7 @@ header nav .logoBrand a {
   display: inline-block;
   color: white;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 header nav .logoBrand a span {
@@ -120,7 +120,7 @@ header nav .extra a:hover {
   color: var(--dua);
 }
 
-header nav .extra #humburger {
+header nav .extra .humburger {
   display: none;
 }
 
@@ -620,6 +620,11 @@ footer .penutup .copyright p {
     font-size: 1rem;
   }
 
+  aside .profil {
+    width: 4rem;
+    height: 4rem;
+  }
+
   .detailProfil .identitasProfil td {
     padding: 0.5rem 2rem;
   }
@@ -668,6 +673,12 @@ footer .penutup .copyright p {
     border-bottom: 0.1rem solid var(--satu);
   }
 
+  header nav .extra .tombolSearch .iF,
+  header nav .extra .iF {
+    width: 2rem;
+    height: 2rem;
+  }
+
   header nav .extra .tombolSearch .search {
     width: 22rem;
   }
@@ -707,11 +718,21 @@ footer .penutup .copyright p {
   }
 
   aside .profil {
-    width: 2rem;
-    height: 2rem;
+    display: none;
   }
 
-  .detailProfil .identitasProfil td {
-    padding: 0.5rem;
+  .detailProfil {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detailProfil .identitasProfil {
+    width: 100%;
+  }
+
+  .detailProfil .identitasProfil .iconX {
+    display: none;
   }
 }
