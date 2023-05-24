@@ -166,7 +166,7 @@ main .home .jumbotron .cta {
   color: var(--satu);
   border-radius: 5px;
   box-shadow: 0 0 1rem var(--dua);
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
 }
 
@@ -474,7 +474,6 @@ aside .profil a:hover {
   padding: 3rem;
   text-align: center;
   position: relative;
-  overflow: auto;
 }
 
 .detailProfil .identitasProfil img,
@@ -637,6 +636,7 @@ footer .penutup .copyright p {
   .detailRo .dMbox {
     width: 80%;
     height: 80%;
+    overflow: auto;
   }
 }
 
