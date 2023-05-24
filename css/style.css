@@ -566,7 +566,7 @@ footer .penutup .copyright p {
 /* dekstop */
 @media (min-width: 1200px) {
   html {
-    font-size: 120%;
+    font-size: 110%;
   }
 
   header nav .extra .tombolSearch .search {
@@ -577,7 +577,7 @@ footer .penutup .copyright p {
 /* tablets */
 @media (max-width: 769px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
 
   header nav .extra .tombolSearch .search {
@@ -618,7 +618,7 @@ footer .penutup .copyright p {
 /* phones */
 @media (max-width: 576px) {
   html {
-    font-size: 75%;
+    font-size: 65%;
   }
 
   header nav .navbar {
