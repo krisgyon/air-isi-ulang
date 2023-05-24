@@ -112,7 +112,7 @@ document.addEventListener("click", function (event) {
 
 form.addEventListener("submit", (e) => {
   kirim.style.display = "none";
-  loading.style.display = "flex";
+  loading.style.display = "inline";
   e.preventDefault();
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })

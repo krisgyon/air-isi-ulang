@@ -104,6 +104,9 @@ header nav .extra .tombolSearch .search.active {
 
 header nav .extra .tombolSearch .iF,
 header nav .extra .iF,
+main .contact .contact-row .alertX .iF,
+main .contact .contact-row .iF,
+aside .profil .iF,
 footer .penutup .iF {
   width: 1.5rem;
   height: 1.5rem;
@@ -148,10 +151,11 @@ main .home .jumbotron h1 {
 main .home .jumbotron p {
   margin-top: 1.5rem;
   color: white;
-  font-size: 1.4rem;
-  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: 200;
   line-height: 2rem;
   text-shadow: 1px 1px 3px var(--tiga);
+  text-align: justify;
 }
 
 main .home .jumbotron .cta {
@@ -185,7 +189,7 @@ main .contact {
 main .about h2,
 main .products h2,
 main .contact h2 {
-  font-size: 1.8em;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 1rem;
   color: white;
@@ -210,15 +214,17 @@ main .about .about-row .about-text {
 
 main .about .about-row .about-text h3 {
   color: var(--dua);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
 }
 
 main .about .about-row .about-text p {
   color: white;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1.6;
   text-align: justify;
 }
@@ -239,14 +245,15 @@ main .products p,
 main .contact p {
   color: white;
   text-align: center;
-  margin-bottom: 2rem;
   line-height: 1.5rem;
+  font-weight: 400;
 }
 
 main .products .products-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 main .products .products-row .product-item {
@@ -297,6 +304,8 @@ main .products .products-row .product-item a:hover {
 main .contact .contact-row {
   background-color: var(--empat);
   display: flex;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 main .contact .contact-row .map {
@@ -382,7 +391,6 @@ main .contact .contact-row .form .formItem textarea {
 main .contact .contact-row .form .kirim {
   background-color: var(--dua);
   padding: 1rem 2rem;
-  margin-left: 1rem;
   border-radius: 5px;
   font-size: 1rem;
   color: var(--satu);
@@ -392,34 +400,30 @@ main .contact .contact-row .form .kirim {
 main .contact .contact-row .form .loading {
   background-color: var(--dua);
   padding: 1rem 2rem;
-  margin-left: 1rem;
   border-radius: 5px;
   font-size: 1rem;
   color: var(--satu);
   display: none;
-  align-items: center;
   cursor: pointer;
-}
-
-main .contact .contact-row .form .iconLoading {
-  color: var(--);
 }
 
 main .contact .contact-row .form span {
   margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 aside .profil {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.5rem 0 0 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0 0.5rem 0.5rem 0;
   background-color: var(--dua);
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 50%;
-  right: 0;
+  left: 0;
   z-index: 8888;
 }
 
@@ -686,12 +690,25 @@ footer .penutup .copyright p {
     order: 2;
   }
 
+  main .about .about-row .about-text h3 {
+    text-align: justify;
+  }
+
+  main .about .about-row .about-text p {
+    font-size: 1.2rem;
+  }
+
   main .products .products-row {
     overflow: visible;
   }
 
   main .contact .contact-row .alertX {
     font-size: 0.7rem;
+  }
+
+  aside .profil {
+    width: 2rem;
+    height: 2rem;
   }
 
   .detailProfil .identitasProfil td {
