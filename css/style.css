@@ -474,6 +474,7 @@ aside .profil a:hover {
   padding: 3rem;
   text-align: center;
   position: relative;
+  overflow: auto;
 }
 
 .detailProfil .identitasProfil img,
