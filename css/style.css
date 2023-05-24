@@ -160,14 +160,14 @@ main .home .jumbotron p {
 
 main .home .jumbotron .cta {
   display: inline-block;
-  font-size: 1rem;
   font-weight: 400;
   margin-top: 1.5rem;
-  padding: 1rem 2.5rem;
   background-color: var(--dua);
   color: var(--satu);
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 1rem var(--dua);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 main .home::after {
@@ -290,7 +290,6 @@ main .products .products-row .product-item h3 {
 main .products .products-row .product-item a {
   background-color: var(--dua);
   color: var(--satu);
-  padding: 0.3rem 0.8rem;
   border-radius: 5px;
   box-shadow: 1px 1px 0.3rem var(--satu);
   padding: 0.5rem 1rem;
