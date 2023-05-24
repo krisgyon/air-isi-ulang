@@ -151,7 +151,7 @@ main .home .jumbotron h1 {
 main .home .jumbotron p {
   margin-top: 1.5rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   line-height: 2rem;
   text-shadow: 1px 1px 3px var(--tiga);
@@ -275,25 +275,26 @@ main .products .products-row .product-item:hover {
 main .products .products-row .product-item img {
   width: 200px;
   height: 200px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 0.3rem var(--satu);
 }
 
 main .products .products-row .product-item h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-shadow: 1px 1px 0.3rem var(--satu);
 }
 
 main .products .products-row .product-item a {
-  font-size: 0.8rem;
   background-color: var(--dua);
   color: var(--satu);
   padding: 0.3rem 0.8rem;
   border-radius: 5px;
   box-shadow: 1px 1px 0.3rem var(--satu);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 main .products .products-row .product-item a:hover {
@@ -322,6 +323,7 @@ main .contact .contact-row .alertX {
   display: none;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 main .contact .contact-row .alertX strong {
@@ -335,7 +337,7 @@ main .contact .contact-row .alertX .alertBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  color: red;
 }
 
 main .contact .contact-row .alert .alertX:hover {
@@ -390,18 +392,18 @@ main .contact .contact-row .form .formItem textarea {
 
 main .contact .contact-row .form .kirim {
   background-color: var(--dua);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--satu);
   cursor: pointer;
 }
 
 main .contact .contact-row .form .loading {
   background-color: var(--dua);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--satu);
   display: none;
   cursor: pointer;
@@ -489,10 +491,10 @@ aside .profil a:hover {
 .detailMineral .dMbox h3,
 .detailBio .dMbox h3,
 .detailRo .dMbox h3 {
-  margin: 1rem 0;
-  padding: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
   border-radius: 5px;
-  border: 2px solid var(--dua);
+  border-bottom: 0.2rem dashed var(--dua);
 }
 
 .detailProfil .identitasProfil table {
@@ -517,6 +519,9 @@ aside .profil a:hover {
   position: absolute;
   top: -20px;
   right: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .detailProfil .identitasProfil .iconX a,
@@ -526,9 +531,6 @@ aside .profil a:hover {
   background-color: var(--dua);
   padding: 0.5rem;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes dPBox {
@@ -687,7 +689,7 @@ footer .penutup .copyright p {
     padding: 0 0.5rem;
   }
 
-  header nav .extra a#humburger {
+  header nav .extra a.humburger {
     display: inline;
     cursor: pointer;
   }
@@ -714,7 +716,7 @@ footer .penutup .copyright p {
   }
 
   main .contact .contact-row .alertX {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   aside .profil {
@@ -726,6 +728,7 @@ footer .penutup .copyright p {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
 
   .detailProfil .identitasProfil {
