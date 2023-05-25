@@ -475,7 +475,7 @@ aside .profil a:hover {
   width: 50%;
   background-color: var(--satu);
   border-radius: 0.5rem;
-  padding: 2rem 3%;
+  padding: 2rem 5%;
   text-align: center;
   position: relative;
 }
@@ -496,6 +496,7 @@ aside .profil a:hover {
 .detailRo .dMbox h3 {
   margin: 1rem;
   padding: 1rem;
+  font-size: 1.5rem;
   border-radius: 5px;
   border-bottom: 0.2rem dashed var(--dua);
 }
@@ -548,6 +549,7 @@ aside .profil a:hover {
 .detailMineral .dMbox p,
 .detailBio .dMbox p,
 .detailRo .dMbox p {
+  font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
 }
