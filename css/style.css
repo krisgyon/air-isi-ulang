@@ -660,7 +660,7 @@ footer .penutup .copyright p {
     width: 55%;
     height: 100vh;
     padding: 2rem 3%;
-    background-color: var(--dua);
+    background-color: var(--tiga);
     position: absolute;
     top: 100%;
     right: -100%;
@@ -672,17 +672,19 @@ footer .penutup .copyright p {
 
   header nav .navbar a {
     color: var(--satu);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 0 10%;
     padding: 2rem;
+    text-shadow: 0.5px 0.5px 2px var(--satu);
   }
 
   header nav .navbar a:hover {
-    color: var(--lima);
+    color: var(--dua);
   }
 
   header nav .navbar a::after {
     content: "";
+    margin-top: 0.3rem;
     border-bottom: 0.1rem solid var(--satu);
   }
 
