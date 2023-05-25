@@ -75,6 +75,10 @@ header nav .navbar a:hover::after {
   transform: scaleX(0.6);
 }
 
+header nav .navbar .sosmedNav {
+  display: none;
+}
+
 header nav .extra {
   display: flex;
   align-items: center;
@@ -664,6 +668,7 @@ footer .penutup .copyright p {
     position: absolute;
     top: 100%;
     right: -100%;
+    transition: 0.3s linear;
   }
 
   header nav .navbar.active {
@@ -671,6 +676,7 @@ footer .penutup .copyright p {
   }
 
   header nav .navbar a {
+    width: 100%;
     color: var(--satu);
     font-size: 1.5rem;
     margin: 0 10%;
@@ -686,6 +692,23 @@ footer .penutup .copyright p {
     content: "";
     margin-top: 0.3rem;
     border-bottom: 0.1rem solid var(--satu);
+  }
+
+  header nav .navbar .sosmedNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--satu);
+    margin: 1rem 0;
+  }
+
+  header nav .navbar .sosmedNav a {
+    color: var(--satu);
+    margin: 0 0.1rem;
+  }
+
+  header nav .navbar .sosmedNav a:hover {
+    color: var(--tiga);
   }
 
   header nav .extra .tombolSearch .iF,
