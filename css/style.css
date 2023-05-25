@@ -316,13 +316,13 @@ main .contact .contact-row .map {
 
 main .contact .contact-row .alertX {
   margin: 0 1rem 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--dua);
   color: var(--satu);
   display: none;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 main .contact .contact-row .alertX strong {
@@ -461,7 +461,7 @@ aside .profil a:hover {
   bottom: 0;
   z-index: 10000;
   display: none;
-  animation: dPBox 0.5s;
+  animation: dPBox 0.1s;
 }
 
 .detailProfil .identitasProfil,
@@ -471,7 +471,7 @@ aside .profil a:hover {
   width: 50%;
   background-color: var(--satu);
   border-radius: 0.5rem;
-  padding: 3rem;
+  padding: 2rem 3%;
   text-align: center;
   position: relative;
 }
@@ -512,24 +512,22 @@ aside .profil a:hover {
 }
 
 .detailProfil .identitasProfil .iconX,
-.detailMineral .iconX,
-.detailBio .iconX,
-.detailRo .iconX {
+.detailMineral .dMbox .iconX,
+.detailBio .dMbox .iconX,
+.detailRo .dMbox .iconX {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  right: 0;
 }
 
-.detailProfil .identitasProfil .iconX a,
-.detailMineral .iconX,
-.detailBio .iconX,
-.detailRo .iconX {
-  background-color: var(--dua);
-  padding: 0.5rem;
-  border-radius: 50%;
+.detailProfil .identitasProfil .iconX .diF,
+.detailMineral .dMbox .iconX .diF,
+.detailBio .dMbox .iconX .diF,
+.detailRo .dMbox .iconX .diF {
+  color: var(--dua);
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
 }
 
 @keyframes dPBox {
