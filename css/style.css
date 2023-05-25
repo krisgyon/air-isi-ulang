@@ -80,11 +80,14 @@ header nav .navbar .sosmedNav {
 }
 
 header nav .extra {
+  /* testing search start */
+  position: relative;
+  /* testing search end */
   display: flex;
   align-items: center;
 }
 
-header nav .extra .tombolSearch {
+/* header nav .extra .tombolSearch {
   position: relative;
 }
 
@@ -104,7 +107,38 @@ header nav .extra .tombolSearch .search {
 
 header nav .extra .tombolSearch .search.active {
   transform: scaleX(1);
+} */
+
+/* testing search start */
+header nav .extra .tombolSearch {
+  width: 10rem;
+  height: 2.8rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.3s linear;
 }
+
+header nav .extra .tombolSearch.active {
+  width: 45rem;
+}
+
+header nav .extra .tombolSearch .search {
+  width: 100%;
+  height: 100%;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--satu);
+  border-radius: 5px;
+}
+
+header nav .extra .tombolSearch .iFsearch {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/* testing search end */
 
 header nav .extra .tombolSearch .iF,
 header nav .extra .iF,
@@ -602,10 +636,24 @@ footer .penutup .copyright p {
     font-size: 70%;
   }
 
-  header nav .extra .tombolSearch .search {
+  /* header nav .extra .tombolSearch .search {
     width: 30rem;
     top: -6px;
+  } */
+
+  /* testing search start */
+  header nav .extra .tombolSearch {
+    width: 8rem;
   }
+
+  header nav .extra .tombolSearch.active {
+    width: 40rem;
+  }
+
+  header nav .extra .tombolSearch .search {
+    font-size: 1rem;
+  }
+  /* testing search end */
 
   header nav .navbar a {
     padding: 0 0.8rem;
@@ -718,9 +766,24 @@ footer .penutup .copyright p {
     height: 2rem;
   }
 
-  header nav .extra .tombolSearch .search {
+  /* header nav .extra .tombolSearch .search {
     width: 22rem;
+  } */
+
+  /* testing search start */
+  header nav .extra .tombolSearch {
+    width: 7rem;
+    right: 3.5rem;
   }
+
+  header nav .extra .tombolSearch.active {
+    width: 25rem;
+  }
+
+  header nav .extra .tombolSearch .search {
+    font-size: 1rem;
+  }
+  /* testing search end */
 
   header nav .extra a {
     padding: 0 0.5rem;

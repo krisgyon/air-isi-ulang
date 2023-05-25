@@ -25,11 +25,26 @@ const iconXM = document.querySelector(".iconXM");
 const iconXB = document.querySelector(".iconXB");
 const iconXR = document.querySelector(".iconXR");
 
-iconSearch.addEventListener("click", (e) => {
-  search.classList.toggle("active");
+// testing search start
+const tombolSearch = document.querySelector(".tombolSearch");
+const iFsearch = document.querySelector(".iFsearch");
+
+search.addEventListener("click", (e) => {
+  tombolSearch.classList.add("active");
+});
+
+iFsearch.addEventListener("click", (e) => {
+  tombolSearch.classList.toggle("active");
   search.focus();
   e.preventDefault();
 });
+// testing search end
+
+// iconSearch.addEventListener("click", (e) => {
+//   search.classList.toggle("active");
+//   search.focus();
+//   e.preventDefault();
+// });
 
 humburger.addEventListener("click", (e) => {
   navbar.classList.toggle("active");
@@ -105,9 +120,15 @@ document.addEventListener("click", function (event) {
     navbar.classList.remove("active");
   }
 
-  if (!iconSearch.contains(event.target) && !search.contains(event.target)) {
-    search.classList.remove("active");
+  // if (!iconSearch.contains(event.target) && !search.contains(event.target)) {
+  //   search.classList.remove("active");
+  // }
+
+  // testing search start
+  if (!tombolSearch.contains(event.target)) {
+    tombolSearch.classList.remove("active");
   }
+  // testing search end
 });
 
 form.addEventListener("submit", (e) => {
