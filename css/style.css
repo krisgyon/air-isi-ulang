@@ -676,7 +676,6 @@ footer .penutup .copyright p {
   }
 
   header nav .navbar a {
-    width: 100%;
     color: var(--satu);
     font-size: 1.5rem;
     margin: 0 10%;
@@ -699,16 +698,20 @@ footer .penutup .copyright p {
     display: flex;
     align-items: center;
     color: var(--satu);
-    margin: 1rem 0;
+    margin: 1rem 3%;
   }
 
   header nav .navbar .sosmedNav a {
     color: var(--satu);
-    margin: 0 0.1rem;
+    text-shadow: 0.5px 0.5px 2px var(--satu);
+    display: flex;
+    align-items: center;
+    margin: 0 7%;
+    padding: 0.1rem;
   }
 
   header nav .navbar .sosmedNav a:hover {
-    color: var(--tiga);
+    color: var(--dua);
   }
 
   header nav .extra .tombolSearch .iF,
