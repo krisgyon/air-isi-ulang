@@ -571,12 +571,12 @@ aside .profil a:hover {
 
 @keyframes dPBox {
   from {
-    background-color: rgb(255, 255, 255);
-    transform: scale(0);
+    background-color: white;
+    transform: scaleY(0.9);
   }
   to {
-    background-color: rgba(255, 255, 255, 0);
-    transform: scale(1);
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scaleY(1);
   }
 }
 
@@ -643,11 +643,11 @@ footer .penutup .copyright p {
 
   /* testing search start */
   header nav .extra .tombolSearch {
-    width: 8rem;
+    width: 10rem;
   }
 
   header nav .extra .tombolSearch.active {
-    width: 40rem;
+    width: 41rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -772,12 +772,12 @@ footer .penutup .copyright p {
 
   /* testing search start */
   header nav .extra .tombolSearch {
-    width: 7rem;
+    width: 9rem;
     right: 3.5rem;
   }
 
   header nav .extra .tombolSearch.active {
-    width: 25rem;
+    width: 26rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -817,6 +817,7 @@ footer .penutup .copyright p {
 
   main .contact .contact-row .alertX {
     font-size: 1rem;
+    padding: 0.2rem;
   }
 
   aside .profil {
