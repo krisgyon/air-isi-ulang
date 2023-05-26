@@ -568,8 +568,48 @@ aside .profil a:hover {
   right: 0;
 }
 
+.detailMineral .dMbox.M .arrow-leftM,
+.detailBio .dMbox.B .arrow-leftB,
+.detailRo .dMbox.R .arrow-leftR {
+  position: absolute;
+  top: 50%;
+  left: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.detailMineral .dMbox.M .arrow-rightM,
+.detailBio .dMbox.B .arrow-rightB,
+.detailRo .dMbox.R .arrow-rightR {
+  position: absolute;
+  top: 50%;
+  right: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.detailMineral .dMbox.M .arrow-leftM .diF,
+.detailBio .dMbox.B .arrow-leftB .diF,
+.detailRo .dMbox.R .arrow-leftR .diF,
+.detailMineral .dMbox.M .arrow-rightM .diF,
+.detailBio .dMbox.B .arrow-rightB .diF,
+.detailRo .dMbox.R .arrow-rightR .diF {
+  width: 3rem;
+  height: 3rem;
+  color: var(--dua);
+  background-color: var(--satu);
+  border-radius: 50%;
+}
+
 .detailProfil .identitasProfil .iconX .diF,
 .detailMineral .dMbox .iconX .diF,
+.detailMineral .dMbox .arrow-left .diF,
 .detailBio .dMbox .iconX .diF,
 .detailRo .dMbox .iconX .diF {
   color: var(--dua);

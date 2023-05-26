@@ -102,15 +102,21 @@ dR.addEventListener("click", (e) => {
 
 iconXM.addEventListener("click", (e) => {
   dM.style.display = "none";
+  dB.style.display = "none";
+  dR.style.display = "none";
   e.preventDefault();
 });
 
 iconXB.addEventListener("click", (e) => {
+  dM.style.display = "none";
   dB.style.display = "none";
+  dR.style.display = "none";
   e.preventDefault();
 });
 
 iconXR.addEventListener("click", (e) => {
+  dM.style.display = "none";
+  dB.style.display = "none";
   dR.style.display = "none";
   e.preventDefault();
 });
@@ -154,3 +160,54 @@ alertBtn.addEventListener("click", (e) => {
   alertX.style.display = "none";
   e.preventDefault();
 });
+
+// testing arrow start
+const alMM = document.querySelector(".arrow-leftM");
+const alMB = document.querySelector(".arrow-leftB");
+const alMR = document.querySelector(".arrow-leftR");
+const arMM = document.querySelector(".arrow-rightM");
+const arMB = document.querySelector(".arrow-rightB");
+const arMR = document.querySelector(".arrow-rightR");
+
+alMM.addEventListener("click", (e) => {
+  dM.style.display = "none";
+  dR.style.display = "flex";
+  e.preventDefault();
+  e.reset();
+});
+
+alMB.addEventListener("click", (e) => {
+  dB.style.display = "none";
+  dM.style.display = "flex";
+  e.preventDefault();
+  e.reset();
+});
+
+alMR.addEventListener("click", (e) => {
+  dR.style.display = "none";
+  dB.style.display = "flex";
+  e.preventDefault();
+  e.reset();
+});
+
+arMM.addEventListener("click", (e) => {
+  dM.style.display = "none";
+  dB.style.display = "flex";
+  e.preventDefault();
+  e.reset();
+});
+
+arMB.addEventListener("click", (e) => {
+  dB.style.display = "none";
+  dR.style.display = "flex";
+  e.preventDefault();
+  e.reset();
+});
+
+arMR.addEventListener("click", (e) => {
+  dR.style.display = "none";
+  dM.style.display = "flex";
+  e.preventDefault();
+  e.reset();
+});
+// testing arrow end
