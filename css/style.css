@@ -507,6 +507,7 @@ aside .profil a:hover {
 .detailBio .dMbox,
 .detailRo .dMbox {
   width: 50%;
+  height: 50%;
   background-color: var(--satu);
   border-radius: 0.5rem;
   padding: 2rem 5%;
@@ -572,7 +573,7 @@ aside .profil a:hover {
 @keyframes dPBox {
   from {
     background-color: white;
-    transform: scaleY(0.9);
+    transform: scaleY(0);
   }
   to {
     background-color: rgba(0, 0, 0, 0.7);
@@ -647,7 +648,7 @@ footer .penutup .copyright p {
   }
 
   header nav .extra .tombolSearch.active {
-    width: 41rem;
+    width: 42rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -777,7 +778,7 @@ footer .penutup .copyright p {
   }
 
   header nav .extra .tombolSearch.active {
-    width: 26rem;
+    width: 27rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -817,7 +818,10 @@ footer .penutup .copyright p {
 
   main .contact .contact-row .alertX {
     font-size: 1rem;
-    padding: 0.2rem;
+  }
+
+  main .contact .contact-row .alertX strong {
+    margin-right: 0.2rem;
   }
 
   aside .profil {
