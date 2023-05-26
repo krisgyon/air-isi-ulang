@@ -111,7 +111,7 @@ header nav .extra .tombolSearch .search.active {
 
 /* testing search start */
 header nav .extra .tombolSearch {
-  width: 10rem;
+  width: 8rem;
   height: 2.8rem;
   position: absolute;
   right: 0;
@@ -499,14 +499,14 @@ aside .profil a:hover {
   bottom: 0;
   z-index: 10000;
   display: none;
-  animation: dPBox 0.1s;
+  animation: dPBox 0.2s;
 }
 
 .detailProfil .identitasProfil,
 .detailMineral .dMbox,
 .detailBio .dMbox,
 .detailRo .dMbox {
-  width: 50%;
+  width: 70%;
   background-color: var(--satu);
   border-radius: 0.5rem;
   padding: 2rem 5%;
@@ -518,7 +518,7 @@ aside .profil a:hover {
 .detailMineral .dMbox.M p,
 .detailBio .dMbox.B p,
 .detailRo .dMbox.R p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -650,12 +650,8 @@ footer .penutup .copyright p {
   } */
 
   /* testing search start */
-  header nav .extra .tombolSearch {
-    width: 10rem;
-  }
-
   header nav .extra .tombolSearch.active {
-    width: 43rem;
+    width: 40rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -688,14 +684,6 @@ footer .penutup .copyright p {
 
   .detailProfil .identitasProfil td {
     padding: 0.5rem 2rem;
-  }
-
-  .detailProfil .identitasProfil,
-  .detailMineral .dMbox,
-  .detailBio .dMbox,
-  .detailRo .dMbox {
-    width: 80%;
-    height: 50%;
   }
 
   .detailProfil .identitasProfil img {
@@ -847,10 +835,10 @@ footer .penutup .copyright p {
     width: 100%;
   }
 
-  .detailMineral .dMbox,
-  .detailBio .dMbox,
-  .detailRo .dMbox {
-    height: 65%;
+  .detailMineral .dMbox.M p,
+  .detailBio .dMbox.B p,
+  .detailRo .dMbox.R p {
+    font-size: 1.2rem;
   }
 
   .detailProfil .identitasProfil .iconX {
