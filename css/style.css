@@ -555,6 +555,7 @@ aside .profil a:hover {
 }
 
 .detailProfil .identitasProfil td {
+  font-size: 1.2rem;
   padding: 0.5rem 2.5rem;
 }
 
@@ -840,6 +841,11 @@ footer .penutup .copyright p {
   .detailBio .dMbox,
   .detailRo .dMbox {
     width: 85%;
+  }
+
+  .detailProfil .identitasProfil td {
+    padding: 0.5rem;
+    padding-left: 2rem;
   }
 
   .detailMineral .dMbox.M p,
