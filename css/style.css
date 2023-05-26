@@ -507,12 +507,19 @@ aside .profil a:hover {
 .detailBio .dMbox,
 .detailRo .dMbox {
   width: 50%;
-  height: 50%;
   background-color: var(--satu);
   border-radius: 0.5rem;
   padding: 2rem 5%;
   text-align: center;
   position: relative;
+  animation: dPBox 0.1s;
+}
+
+.detailMineral .dMbox.M p,
+.detailBio .dMbox.B p,
+.detailRo .dMbox.R p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .detailProfil .identitasProfil img,
@@ -648,7 +655,7 @@ footer .penutup .copyright p {
   }
 
   header nav .extra .tombolSearch.active {
-    width: 42rem;
+    width: 43rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -688,7 +695,7 @@ footer .penutup .copyright p {
   .detailBio .dMbox,
   .detailRo .dMbox {
     width: 80%;
-    height: 80%;
+    height: 50%;
   }
 
   .detailProfil .identitasProfil img {
@@ -778,7 +785,7 @@ footer .penutup .copyright p {
   }
 
   header nav .extra .tombolSearch.active {
-    width: 27rem;
+    width: 28rem;
   }
 
   header nav .extra .tombolSearch .search {
@@ -838,6 +845,12 @@ footer .penutup .copyright p {
 
   .detailProfil .identitasProfil {
     width: 100%;
+  }
+
+  .detailMineral .dMbox,
+  .detailBio .dMbox,
+  .detailRo .dMbox {
+    height: 65%;
   }
 
   .detailProfil .identitasProfil .iconX {
