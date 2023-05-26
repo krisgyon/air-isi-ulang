@@ -538,7 +538,7 @@ aside .profil a:hover {
 .detailRo .dMbox h3 {
   margin: 1rem;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 5px;
   border-bottom: 0.2rem dashed var(--dua);
 }
@@ -588,11 +588,11 @@ aside .profil a:hover {
   }
 }
 
-.detailMineral .dMbox p,
-.detailBio .dMbox p,
-.detailRo .dMbox p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.detailMineral .dMbox.M p,
+.detailBio .dMbox.B p,
+.detailRo .dMbox.R p {
+  font-size: 1.5rem;
+  line-height: 1.5;
   text-align: justify;
 }
 
