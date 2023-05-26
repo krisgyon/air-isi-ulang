@@ -898,4 +898,15 @@ footer .penutup .copyright p {
   .detailProfil .identitasProfil .iconX {
     display: none;
   }
+
+  /* arrow tasting start */
+  .detailMineral .dMbox.M .arrow-leftM,
+  .detailBio .dMbox.B .arrow-leftB,
+  .detailRo .dMbox.R .arrow-leftR,
+  .detailMineral .dMbox.M .arrow-rightM,
+  .detailBio .dMbox.B .arrow-rightB,
+  .detailRo .dMbox.R .arrow-rightR {
+    display: none;
+  }
+  /* arrow tasting end */
 }
