@@ -812,7 +812,8 @@ footer .penutup .copyright p {
   }
 
   main .contact .contact-row .alertX {
-    font-size: 1rem;
+    padding: 0.5 rem 0.2rem;
+    font-size: 0.8rem;
   }
 
   main .contact .contact-row .alertX strong {
@@ -833,6 +834,12 @@ footer .penutup .copyright p {
 
   .detailProfil .identitasProfil {
     width: 100%;
+  }
+
+  .detailMineral .dMbox,
+  .detailBio .dMbox,
+  .detailRo .dMbox {
+    width: 85%;
   }
 
   .detailMineral .dMbox.M p,
