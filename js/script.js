@@ -6,8 +6,9 @@ const alertX = document.querySelector(".alertX");
 const alertBtn = document.querySelector(".alertBtn");
 const humburger = document.querySelector("#humburger");
 const navbar = document.querySelector(".navbar");
-const iconSearch = document.querySelector(".iconSearch");
 const search = document.querySelector(".search");
+const tombolSearch = document.querySelector(".tombolSearch");
+const iFsearch = document.querySelector(".iFsearch");
 const profil = document.querySelector(".profil");
 const dP = document.querySelector(".detailProfil");
 const iconX = document.querySelector(".iconX");
@@ -24,10 +25,12 @@ const dMBoxR = document.querySelector(".R");
 const iconXM = document.querySelector(".iconXM");
 const iconXB = document.querySelector(".iconXB");
 const iconXR = document.querySelector(".iconXR");
-
-// testing search start
-const tombolSearch = document.querySelector(".tombolSearch");
-const iFsearch = document.querySelector(".iFsearch");
+const alMM = document.querySelector(".arrow-leftM");
+const alMB = document.querySelector(".arrow-leftB");
+const alMR = document.querySelector(".arrow-leftR");
+const arMM = document.querySelector(".arrow-rightM");
+const arMB = document.querySelector(".arrow-rightB");
+const arMR = document.querySelector(".arrow-rightR");
 
 search.addEventListener("click", (e) => {
   tombolSearch.classList.add("active");
@@ -38,13 +41,6 @@ iFsearch.addEventListener("click", (e) => {
   search.focus();
   e.preventDefault();
 });
-// testing search end
-
-// iconSearch.addEventListener("click", (e) => {
-//   search.classList.toggle("active");
-//   search.focus();
-//   e.preventDefault();
-// });
 
 humburger.addEventListener("click", (e) => {
   navbar.classList.toggle("active");
@@ -126,10 +122,6 @@ document.addEventListener("click", function (event) {
     navbar.classList.remove("active");
   }
 
-  // if (!iconSearch.contains(event.target) && !search.contains(event.target)) {
-  //   search.classList.remove("active");
-  // }
-
   // testing search start
   if (!tombolSearch.contains(event.target)) {
     tombolSearch.classList.remove("active");
@@ -160,14 +152,6 @@ alertBtn.addEventListener("click", (e) => {
   alertX.style.display = "none";
   e.preventDefault();
 });
-
-// testing arrow start
-const alMM = document.querySelector(".arrow-leftM");
-const alMB = document.querySelector(".arrow-leftB");
-const alMR = document.querySelector(".arrow-leftR");
-const arMM = document.querySelector(".arrow-rightM");
-const arMB = document.querySelector(".arrow-rightB");
-const arMR = document.querySelector(".arrow-rightR");
 
 alMM.addEventListener("click", (e) => {
   dM.style.display = "none";
@@ -210,4 +194,3 @@ arMR.addEventListener("click", (e) => {
   e.preventDefault();
   e.reset();
 });
-// testing arrow end

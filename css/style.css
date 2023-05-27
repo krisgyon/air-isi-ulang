@@ -80,36 +80,11 @@ header nav .navbar .sosmedNav {
 }
 
 header nav .extra {
-  /* testing search start */
   position: relative;
-  /* testing search end */
   display: flex;
   align-items: center;
 }
 
-/* header nav .extra .tombolSearch {
-  position: relative;
-}
-
-header nav .extra .tombolSearch .search {
-  width: 45rem;
-  height: 3rem;
-  position: absolute;
-  top: -5px;
-  right: 35px;
-  padding: 0.3rem 1rem;
-  font-size: 1rem;
-  color: var(--satu);
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
-  transition: 0.3s linear;
-}
-
-header nav .extra .tombolSearch .search.active {
-  transform: scaleX(1);
-} */
-
-/* testing search start */
 header nav .extra .tombolSearch {
   width: 8rem;
   height: 2.8rem;
@@ -138,7 +113,6 @@ header nav .extra .tombolSearch .iFsearch {
   width: 1.5rem;
   height: 1.5rem;
 }
-/* testing search end */
 
 header nav .extra .tombolSearch .iF,
 header nav .extra .iF,
@@ -518,8 +492,9 @@ aside .profil a:hover {
 .detailMineral .dMbox.M p,
 .detailBio .dMbox.B p,
 .detailRo .dMbox.R p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .detailProfil .identitasProfil img,
@@ -629,14 +604,6 @@ aside .profil a:hover {
   }
 }
 
-.detailMineral .dMbox.M p,
-.detailBio .dMbox.B p,
-.detailRo .dMbox.R p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: justify;
-}
-
 footer .penutup {
   background-color: var(--dua);
   padding: 1rem 7%;
@@ -673,10 +640,6 @@ footer .penutup .copyright p {
   html {
     font-size: 110%;
   }
-
-  header nav .extra .tombolSearch .search {
-    margin-top: -5px;
-  }
 }
 
 /* tablets */
@@ -685,12 +648,6 @@ footer .penutup .copyright p {
     font-size: 70%;
   }
 
-  /* header nav .extra .tombolSearch .search {
-    width: 30rem;
-    top: -6px;
-  } */
-
-  /* testing search start */
   header nav .extra .tombolSearch.active {
     width: 40rem;
   }
@@ -698,7 +655,6 @@ footer .penutup .copyright p {
   header nav .extra .tombolSearch .search {
     font-size: 1rem;
   }
-  /* testing search end */
 
   header nav .navbar a {
     padding: 0 0.8rem;
@@ -803,11 +759,6 @@ footer .penutup .copyright p {
     height: 2rem;
   }
 
-  /* header nav .extra .tombolSearch .search {
-    width: 22rem;
-  } */
-
-  /* testing search start */
   header nav .extra .tombolSearch {
     width: 9rem;
     right: 3.5rem;
@@ -820,7 +771,6 @@ footer .penutup .copyright p {
   header nav .extra .tombolSearch .search {
     font-size: 1rem;
   }
-  /* testing search end */
 
   header nav .extra a {
     padding: 0 0.5rem;
@@ -899,7 +849,6 @@ footer .penutup .copyright p {
     display: none;
   }
 
-  /* arrow tasting start */
   .detailMineral .dMbox.M .arrow-leftM,
   .detailBio .dMbox.B .arrow-leftB,
   .detailRo .dMbox.R .arrow-leftR {
@@ -922,5 +871,4 @@ footer .penutup .copyright p {
     background-color: var(--satu);
     border-radius: 50%;
   }
-  /* arrow tasting end */
 }
