@@ -632,8 +632,13 @@ footer .penutup .footerNav a:hover {
   color: var(--tiga);
 }
 
-footer .penutup .copyright p {
+footer .penutup .copyright p,
+footer .penutup .copyright p span {
   font-size: 1rem;
+}
+
+footer .penutup .copyright p span {
+  font-weight: 700;
 }
 
 /* Media Query */
