@@ -39,14 +39,22 @@ header nav {
 }
 
 header nav .logoBrand a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: white;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 1.8rem;
+}
+
+header nav .logoBrand a img {
+  width: 30px;
 }
 
 header nav .logoBrand a span {
   color: var(--dua);
+  display: inline-block;
+  margin: 0 0.3rem;
+  font-weight: 700;
 }
 
 header nav .navbar a {
@@ -228,7 +236,7 @@ main .about .about-row .about-text h3 {
   color: var(--dua);
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
