@@ -507,6 +507,7 @@ aside .profil a:hover {
 .detailRo .dMbox img {
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--dua);
+  animation: dPibox 1s;
 }
 
 .detailProfil .identitasProfil h3,
@@ -598,11 +599,20 @@ aside .profil a:hover {
 @keyframes dPBox {
   from {
     background-color: white;
-    transform: scaleY(0);
+    transform: scaleY(0.8);
   }
   to {
     background-color: rgba(0, 0, 0, 0.7);
     transform: scaleY(1);
+  }
+}
+
+@keyframes dPibox {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0);
   }
 }
 
