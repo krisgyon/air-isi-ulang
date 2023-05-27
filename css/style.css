@@ -903,15 +903,24 @@ footer .penutup .copyright p {
   .detailMineral .dMbox.M .arrow-leftM,
   .detailBio .dMbox.B .arrow-leftB,
   .detailRo .dMbox.R .arrow-leftR {
-    top: 12%;
-    left: 2rem;
+    top: 1rem;
+    left: 1rem;
   }
 
   .detailMineral .dMbox.M .arrow-rightM,
   .detailBio .dMbox.B .arrow-rightB,
   .detailRo .dMbox.R .arrow-rightR {
-    top: 12%;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .detailMineral .dMbox .iconX,
+  .detailBio .dMbox .iconX,
+  .detailRo .dMbox .iconX {
+    position: absolute;
+    top: -4rem;
+    background-color: var(--satu);
+    border-radius: 50%;
   }
   /* arrow tasting end */
 }
