@@ -246,8 +246,6 @@ main .about .about-row .about-img {
 }
 
 main .about .about-row .about-img img {
-  /* width: 500px;
-  height: 500px; */
   width: 100%;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--dua);
@@ -285,8 +283,6 @@ main .products .products-row .product-item:hover {
 }
 
 main .products .products-row .product-item img {
-  width: 200px;
-  height: 200px;
   margin-bottom: 1rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 0.3rem var(--satu);
@@ -501,8 +497,6 @@ aside .profil a:hover {
 .detailMineral .dMbox img,
 .detailBio .dMbox img,
 .detailRo .dMbox img {
-  width: 200px;
-  height: 200px;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--dua);
 }
